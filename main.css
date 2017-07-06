@@ -4,6 +4,14 @@ body {
 
 h2 {
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 15px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  font-family: "Overpass", sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .jumbotron {
@@ -15,6 +23,15 @@ h2 {
 
 .container, .container-fluid {
   padding: 60px 50px;
+}
+
+.figure {
+  float: left;
+  margin: 0 3.3175% 1.5em 0;
+  width: 31.1216%;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
 }
 
 nav .container {
@@ -35,10 +52,64 @@ nav .container {
   color: #0048a8;
 }
 
+.figimgtall {
+  padding: 10px;
+}
+
+.figimgwide {
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
+  }
+  .hhslogo {
+    width: 230px;
+    height: 100px;
+  }
+
+  .figimgtall {
+    width: 180px;
+    height: 240px;
+  }
+
+  .figimgwide {
+    width: 240px;
+    height: 180px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .figimgtall {
+    width: 120px;
+    height: 160px;
+  }
+
+  .figimgwide {
+    width: 160px;
+    height: 120px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hhslogo {
+    width: 115px;
+    height: 50px;
+  }
+
+  .figimgtall {
+    width: 90px;
+    height: 120px;
+  }
+
+  .figimgwide {
+    width: 120px;
+    height: 90px;
+    margin-top: 15px;
   }
 }
 
@@ -78,10 +149,6 @@ nav .container {
   margin: 70px 0;
 }
 
-#contact h2 {
-  padding-bottom: 40px;
-}
-
 .navbar {
   margin-bottom: 0;
   background-color: #0048a8;
@@ -93,6 +160,7 @@ nav .container {
   line-height: 1.42857143 !important;
   letter-spacing: 4px;
   border-radius: 0;
+  width: 100vw;
 }
 
 .navbar-header a {
